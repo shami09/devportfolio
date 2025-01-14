@@ -5,141 +5,177 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Shamika Likhite</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        #photo {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #f4f4f9;
+            color: #333;
         }
 
-        #photo img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 3px solid #007bff;
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        #menu {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+            margin: 0;
+        }
+
+        #menu li {
+            margin: 0 15px;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        #menu a:hover {
+            color: #007bff;
+        }
+
+        .hero {
+            height: 100vh;
+            background: linear-gradient(to right, #007bff, #6610f2);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin: 15px 0;
+        }
+
+        .hero a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: white;
+            color: #007bff;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        .hero a:hover {
+            background: #007bff;
+            color: white;
+        }
+
+        section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <div id="photo">
-        <img src="images/your-photo.jpg" alt="Your Photo">
-    </div>
-
     <header>
-        <ul id="menu" class="shadow">
+        <ul id="menu">
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-        <div class="experience-block">
-            <h3>Speechace</h3>
-            <h4>Machine Learning Engineer (October 2024 - Present)</h4>
-            <ul>
-                <li>Developing language assessment models.</li>
-            </ul>
-        </div>
-
-        <div class="experience-block">
-            <h3>Ideas Lab</h3>
-            <h4>Machine Learning Research Engineer (June 2023 - October 2024)</h4>
-            <ul>
-                <li>Developed a multimodal speech disfluency dataset for audio disfluency analysis.</li>
-                <li>Created self-supervised learning models for multimodal speech disfluency analysis.</li>
-            </ul>
-        </div>
-
-        <div class="experience-block">
-            <h3>Sonic Labs</h3>
-            <h4>Data Science Intern (June 2023 - December 2023)</h4>
-            <ul>
-                <li>Conducted analysis of organizational interaction data to examine AI's influence on team formation.</li>
-                <li>Employed advanced statistical modeling techniques for cross-boundary collaboration insights.</li>
-            </ul>
-        </div>
-
-        <div class="experience-block">
-            <h3>Feinberg School of Medicine</h3>
-            <h4>Research Assistant - Machine Learning (March 2023 - June 2023)</h4>
-            <ul>
-                <li>Developed models to identify prostate cancer levels from whole slide images.</li>
-                <li>Predicted survival rates for brain tumor patients using Multiple Instance Learning.</li>
-            </ul>
-        </div>
-
-        <div class="experience-block">
-            <h3>Ugam Solutions</h3>
-            <h4>Data Analyst Intern (May 2021 - July 2021)</h4>
-            <ul>
-                <li>Developed pre-processing steps to enhance image classification and segmentation quality.</li>
-                <li>Built GAN-based super-resolution models to improve image quality by 98%.</li>
-                <li>Developed a user interface for super-resolution using Flask and Rest APIs.</li>
-            </ul>
-        </div>
+    <div class="hero">
+        <h1>Shamika Likhite</h1>
+        <p>Machine Learning Engineer | Data Scientist | AI Enthusiast</p>
+        <a href="#contact">Get in Touch</a>
     </div>
 
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Northwestern University</h3>
-            <span class="education-date">Sept 2022 - Dec 2023</span>
-            <h4>Master of Science in Computer Engineering</h4>
-        </div>
-        <!-- End .education-block -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Shamika. I am a graduate student at Northwestern University, specializing in Artificial Intelligence. With a passion for Machine Learning and Data Science, I strive to build impactful AI solutions.</p>
+    </section>
 
-        <div class="education-block">
-            <h3>Visvesvaraya National Institute of Technology, Nagpur, India</h3>
-            <span class="education-date">July 2018 - May 2022</span>
-            <h4>Bachelor of Technology in Electrical and Electronics Engineering</h4>
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Here are some highlights of my professional journey:</p>
         <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>R</li>
-            <li>Android Studio</li>
-            <li>Node.js</li>
-            <li>Pytorch</li>
-            <li>React</li>
-            <li>Tensorflow</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>NLTK</li>
-            <li>Tableau</li>
-            <li>Power Bi</li>
-            <li>Spacy</li>
-            <li>PostgreSQL</li>
-            <li>Azure</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Flask</li>
+            <li>Speechace - Machine Learning Engineer</li>
+            <li>Ideas Lab - Machine Learning Research Engineer</li>
+            <li>Sonic Labs - Data Science Intern</li>
         </ul>
-    </div>
-    <!-- End #skills -->
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <p>Northwestern University - M.S. in Computer Engineering</p>
+        <p>Visvesvaraya National Institute of Technology - B.Tech in Electrical and Electronics</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Take a look at some of the projects I've worked on:</p>
+        <ul>
+            <li>Artist Style Learning System</li>
+            <li>Golden Globe Awards Tweets Mining</li>
+            <li>Interactive Cookbook</li>
+            <li>Plant Disease Categorization</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me at:</p>
+        <p>Email: <a href="mailto:shamika@example.com">shamika@example.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/shamika-likhite" target="_blank">linkedin.com/in/shamika-likhite</a></p>
+    </section>
 
     <footer>
-        <p>&copy; <span id="current-year">2023</span> Shamika Likhite</p>
+        <p>&copy; <span id="current-year">2023</span> Shamika Likhite | Built with ❤️</p>
     </footer>
 
     <script>
