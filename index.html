@@ -13,11 +13,6 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
     <style>
-        body {
-            background-color: #f8f9fa;
-            font-family: 'Lato', sans-serif;
-        }
-
         #photo {
             display: flex;
             justify-content: center;
@@ -29,51 +24,6 @@
             height: 150px;
             border-radius: 50%;
             border: 3px solid #007bff;
-        }
-
-        #experience {
-            background-color: #ffffff;
-            padding: 40px 20px;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .experience-block {
-            margin-bottom: 30px;
-        }
-
-        .experience-block h3 {
-            color: #007bff;
-        }
-
-        .experience-block h4 {
-            margin-top: 5px;
-            color: #6c757d;
-        }
-
-        .experience-block ul {
-            padding-left: 20px;
-        }
-
-        .experience-block ul li {
-            margin-bottom: 10px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #343a40;
-            color: #fff;
-        }
-
-        footer a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
@@ -94,7 +44,7 @@
         </ul>
     </header>
 
-    <div id="experience">
+    <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div class="experience-block">
             <h3>Speechace</h3>
@@ -142,9 +92,54 @@
         </div>
     </div>
 
+    <div id="education">
+        <h2 class="heading">Education</h2>
+        <div class="education-block">
+            <h3>Northwestern University</h3>
+            <span class="education-date">Sept 2022 - Dec 2023</span>
+            <h4>Master of Science in Computer Engineering</h4>
+        </div>
+        <!-- End .education-block -->
+
+        <div class="education-block">
+            <h3>Visvesvaraya National Institute of Technology, Nagpur, India</h3>
+            <span class="education-date">July 2018 - May 2022</span>
+            <h4>Bachelor of Technology in Electrical and Electronics Engineering</h4>
+        </div>
+        <!-- End .education-block -->
+    </div>
+    <!-- End #education -->
+
+    <div id="skills">
+        <h2 class="heading">Skills</h2>
+        <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>R</li>
+            <li>Android Studio</li>
+            <li>Node.js</li>
+            <li>Pytorch</li>
+            <li>React</li>
+            <li>Tensorflow</li>
+            <li>Java</li>
+            <li>C</li>
+            <li>C#</li>
+            <li>C++</li>
+            <li>NLTK</li>
+            <li>Tableau</li>
+            <li>Power Bi</li>
+            <li>Spacy</li>
+            <li>PostgreSQL</li>
+            <li>Azure</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Flask</li>
+        </ul>
+    </div>
+    <!-- End #skills -->
+
     <footer>
         <p>&copy; <span id="current-year">2023</span> Shamika Likhite</p>
-        <a href="#photo">Back to Top</a>
     </footer>
 
     <script>
