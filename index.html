@@ -6,402 +6,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Lato', sans-serif;
+        }
+
+        #photo {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        #photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #007bff;
+        }
+
+        #experience {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .experience-block {
+            margin-bottom: 30px;
+        }
+
+        .experience-block h3 {
+            color: #007bff;
+        }
+
+        .experience-block h4 {
+            margin-top: 5px;
+            color: #6c757d;
+        }
+
+        .experience-block ul {
+            padding-left: 20px;
+        }
+
+        .experience-block ul li {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: #fff;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+    <div id="photo">
+        <img src="images/your-photo.jpg" alt="Your Photo">
     </div>
-    <!-- End #mobile-menu-toggle -->
+
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
         <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
-    <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <h1>Shamika Likhite</h1>
-            <h2>Machine Learning and Data Science Enthusiast</h2>
-            <a href="https://drive.google.com/file/d/1LkfnTvHP6kn6j_wobUzKDDuJbzDKdp56/view?usp=sharing" class="btn-rounded-white">Download Resume</a>
-        </div>
-        <!-- End #lead-content -->
-
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-			<style>
-        			p{text-align: justify;}
-                                </style>
-                    <p>
-			    <style>
-        			p{text-align: justify;}
-                               </style>
-			Hi, I’m Shamika. I am a graduate student at Northwestern University majoring in Computer Engineering, specializing in Artificial Intelligence.
-			</p>
-			<p>
-				<br><br>
-				<style>
-        			p{text-align: justify;}
-                               </style>
-			    Worked as a Software Development Intern at Ugam Solutions, A Merkle Company, during my undergraduate years at the National Institute of Technology (Nagpur). While working
-as an intern at Ugam, I gained invaluable insights into ‘behind-the-scenes’ of data analysts,
-software development and building an API for image enhancement. Academic and
-professional work experience projects in the areas of Machine Learning and Data Analysis
-models for use cases are helping me to augment exposures in the scale of Artificial
-Intelligence.
-			
-			</p>
-			<p>
-				<br><br>
-				<style>
-        			p{text-align: justify;}
-                               </style>
-				<br><br>
-				From writing my first program for image enhancement to training my first Generative Adversarial Network, my goal has always been to strengthen my skills and learnings into powerful algorithms that will help me to effectively pursue my career objectives.
-                    </p>
-			<p>
-				<style>
-        			p{text-align: justify;}
-                               </style>
-				I am currently working as a ‘Research Assistant’ at the Feinberg School of Medicine to
-develop Cancer Detection and Survival Rate Prediction Models for industry use-cases.
-				<br><br>
-				Apart from living in a world of 1s and 0s, I also play tennis and spend entire nights with
-jigsaw puzzles.
-			</p>
-				
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #about -->
-
-    <div id="experience" class="background-alt">
+    <div id="experience">
         <h2 class="heading">Experience</h2>
-        <div id="experience-timeline">
-            <div data-date="May 2021 – July 2021">
-                <h3>Ugam Solutions Sez Pvt Ltd ( Merkle Inc)</h3>
-                <h4>Data Analyst Intern</h4>
-              
-		<ul>
-                <li>
-                    Programmed on Ugam’s Cognitive Computing platform to improve image classification, segmentation, annotation, and object detection by developing a pre-processing step to enhance image quality through image processing.
-                </li>
-                <li>
-                    Formulated a data processing pipeline using unsupervised learning to improve the image quality and increase the accuracy of image models using deep learning and Computer Vision (OpenCV).
-                </li>
-                <li>
-                    Built super-resolution models by training on Generative Adversarial Networks (GAN) using PyTorch to improve the quality of the processed images by 98%.
-                </li>
-		<li>
-		    Developed a user interface for super-resolution using Software Engineering on Flask and Rest APIs on HTTPS protocol to save and display a high-resolution image and a low-quality image to differentiate the quality of images.
-		</li>
-			<b>Skillsets:</b><FONT COLOR= grey> Deep Learning, OpenCV, Generative Adversarial Networks(GAN), PyTorch, RestAPI, Flask, HTML, CSS</FONT>
-			
+        <div class="experience-block">
+            <h3>Speechace</h3>
+            <h4>Machine Learning Engineer (October 2024 - Present)</h4>
+            <ul>
+                <li>Developing language assessment models.</li>
             </ul>
-                    
-               
-            </div>
+        </div>
 
-            <div data-date="March 2023 – June 2023">
-                <h3>Feinberg School of Medicine</h3>
-                <h4>Research Assistant - Machine Learning</h4>
-                <ul>
-			<li>Developing a model to identify the level of Prostate Cancer from whole slide images.
-			</li>
-			<li> Working on predicting the survival rate of brain tumor patient after 2 years of treatments using Multiple Instance Learning from Whole slide images
-			</li>
-			<b>Skillsets:</b><FONT COLOR= grey> Machine Learning, Image Processing, Predictive Analytics, Image Segmentation, Python, Tensorflow </FONT>                   
-                </ul>
-            </div>
-		<div data-date="June 2023 - December 2023">
-			<h3>Sonic Labs</h3>
-			<h4> Data Science Intern</h4>
-			<ul>
-				<li>Conducted in-depth analysis of organization interaction data to examine the influence of targeted AI interactions on successful team formation, employing machine learning algorithms.
-				</li>
-				<li>Employed advanced statistical modeling techniques (ERGM, SAOM, REM) in R to explore diverse motivations for cross-boundary collaboration, providing valuable insights into team dynamics and fostering effective cooperation.
-				</li>
-				<b>Skillsets:</b><FONT COLOR= grey> Machine Learning, R, Statistics, Probability, R </FONT>
-			</ul>
-		</div>
-		<div data-date="June 2023- October 2024">
-			<h3>Ideas Lab</h3>
-			<h4> Machine Learning Research Engineer </h4>
-			<ul>
-				<li>Developing a multimodal speech disfluency dataset, encompassing video and text data, to facilitate audio disfluency analysis.
-				</li>
-				<li>Crafting informative labels for audio, video, and text data, enabling seamless multimodal analysis of speech disfluency.
-				</li>
-				<li>Pioneering multimodal speech disfluency analysis model using self-supervised learning techniques.
-				</li>
-				<b>Skillsets:</b><FONT COLOR= grey> Deep Learning, OpenCV, Audio Processing, Video Processing, Natural Language Processing, Python, Data Pipeline, PyTorch, TensorFlow </FONT>
-			</ul>
-		</div>
-		<div data-date="October 2024- Present">
-			<h3>Speechace</h3>
-			<h4> Machine Learning Engineer </h4>
-			<ul>
-				<li>Developing language assessment models
-				</li>
-				
-			</ul>
-		</div>
+        <div class="experience-block">
+            <h3>Ideas Lab</h3>
+            <h4>Machine Learning Research Engineer (June 2023 - October 2024)</h4>
+            <ul>
+                <li>Developed a multimodal speech disfluency dataset for audio disfluency analysis.</li>
+                <li>Created self-supervised learning models for multimodal speech disfluency analysis.</li>
+            </ul>
+        </div>
+
+        <div class="experience-block">
+            <h3>Sonic Labs</h3>
+            <h4>Data Science Intern (June 2023 - December 2023)</h4>
+            <ul>
+                <li>Conducted analysis of organizational interaction data to examine AI's influence on team formation.</li>
+                <li>Employed advanced statistical modeling techniques for cross-boundary collaboration insights.</li>
+            </ul>
+        </div>
+
+        <div class="experience-block">
+            <h3>Feinberg School of Medicine</h3>
+            <h4>Research Assistant - Machine Learning (March 2023 - June 2023)</h4>
+            <ul>
+                <li>Developed models to identify prostate cancer levels from whole slide images.</li>
+                <li>Predicted survival rates for brain tumor patients using Multiple Instance Learning.</li>
+            </ul>
+        </div>
+
+        <div class="experience-block">
+            <h3>Ugam Solutions</h3>
+            <h4>Data Analyst Intern (May 2021 - July 2021)</h4>
+            <ul>
+                <li>Developed pre-processing steps to enhance image classification and segmentation quality.</li>
+                <li>Built GAN-based super-resolution models to improve image quality by 98%.</li>
+                <li>Developed a user interface for super-resolution using Flask and Rest APIs.</li>
+            </ul>
         </div>
     </div>
-    <!-- End #experience -->
-
-    <div id="education">
-        <h2 class="heading">Education</h2>
-        <div class="education-block">
-            <h3>Northwestern University</h3>
-            <span class="education-date">Sept 2022 - Dec 2023</span>
-            <h4>Master of Science in Computer Engineering</h4>
-        </div>
-        <!-- End .education-block -->
-
-        <div class="education-block">
-            <h3>Visvesvaraya National Institute of Technology, Nagpur, India</h3>
-            <span class="education-date">July 2018 - May 2022</span>
-            <h4>Bachelor of Technology in Electrical and Electronics Engineering</h4>
-      
-        </div>
-        <!-- End .education-block -->
-    </div>
-    <!-- End #education -->
-
-    <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                   
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/styletranfer1.jpeg"
-			     width="250"
-			     height="300"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Artist Style Learning System - Style Transfer using GAN</h3>
-			    
-                        <ul>
-				<style>
-        			li{text-align: justify;}
-                                </style>
-				<li>Built a deep learning Generative AI model to generate images of paintings using DCGAN with PyTorch.
-					
-				</li>
-				<li>Enhanced the quality of generated images by devising a data-driven model using Cycle GAN and altering the style of images to that of Monet paintings, Van Gogh Paintings, and Abstract art.
-				</li>
-				<li>Upgraded accuracy of the model to 98% and applied federated learning to the model to improve resolution.
-				</li>
-				
-			    </ul>	
-				
-                        <a href="#">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-		<div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/GG.jpeg"
-			     width="250"
-			     height="300"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Golden Globe Awards Tweets Mining - Text Data Analysis</h3>
-                        <ul>
-				<li>Used Twitter development to implement data mining and web-scraping on tweets for business operations.
-				</li>
-				<li>Ensured accurate mapping of messy data using analytics with NLTK, Beautiful Soup, and Spacy and developed techniques to analyze data of winners, nominees, presenters, and hosts for Golden Globe Awards.
-				</li>
-				<li>Performed sentiment analysis from prescribed datasets with the help of tweets with a model accuracy of 95%.
-				</li>
-				
-			    </ul>	
-				
-                        <a href="https://github.com/shami09/GGParser2023">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-		    <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/cookbook1.jpeg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Interactive Cookbook - Chatbot System Design</h3>
-                        <ul>
-				<li>Designed Conversational AI & speech assistant for parsing recipes and guiding users for cooking with Natural Language Processing(NLP) by automating the process through data segmentation.
-				</li>
-				<li>Built a chat to follow the user’s directives and transform the cuisine style & scripting using BERT, GPT, NLTK, and Spacy.
-				</li>
-				<li> Developed a QA platform for customer service with a decision-making chatbot for cooking by interactive GUI.
-				</li>
-				
-			    </ul>	
-				
-                        <a href="https://github.com/alecpeltekian/RecipeScraper">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-		     <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/images.jpeg" 
-			     width="250"
-			     height="300"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Plant Disease Categorization</h3>
-                        <ul>
-				<li>Devised a baseline CNN predictive models to perform image classification to identify plant diseases through supervised learning.
-				</li>
-				<li>Implemented transfer learning techniques on VGG19 and EfficientNet architectures with neural networks and TensorFlow to obtain model’s validation accuracy of 85%.
-				</li>
-				<li> Built and trained a novel model with GAN and Fastai improving model’s accuracy to 97% and generated
-				</li>
-				
-			    </ul>	
-				
-                        <a href="https://youtu.be/SQ2ZIfFTLJE">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-		    
-           
-        
-    </div>
-    <!-- End #projects -->
-
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>R</li>
-            <li>Android Studio</li>
-            <li>Node.js</li>
-            <li>Pytorch</li>
-            <li>React</li>
-            <li>Tensorflow</li>
-            <li>Java</li>
-            <li>C</li>
-            <li>C#</li>
-            <li>C++</li>
-            <li>NLTK</li>
-            <li>Tableau</li>
-            <li>Power Bi</li>
-            <li>Spacy</li>
-	    <li>PostgreSQL</li>
-            <li>Azure</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Flask</li>
-
-	    
-            
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; <span id="current-year">2023</span> Shamika Likhite
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/shami09" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        
-                        <li>
-                            <a href="https://www.linkedin.com/in/shamika-likhite0904/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
+        <p>&copy; <span id="current-year">2023</span> Shamika Likhite</p>
+        <a href="#photo">Back to Top</a>
     </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
+    <script>
+        document.getElementById("current-year").textContent = new Date().getFullYear();
+    </script>
 </body>
 
 </html>
